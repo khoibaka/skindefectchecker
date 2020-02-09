@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Skin Defect Checker</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<h1>Inputs</h1>
+		<form method="POST" action="/upload" enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="inputFile">File input</label>
+				<input type="file" name="inputFile">
+				<label for="age">Age</label>
+				<input type="number" name="age">
+				<label for="gender">Gender</label>
+				<input type="radio" name="gender" value="0" checked> Male<br>
+  				<input type="radio" name="gender" value="1"> Female<br>
+  				<label for="localization">Location</label>
+  				<input type="radio" name="localization" value="0" checked> Back<br>
+  				<input type="radio" name="localization" value="1" checked> Lower Extremity<br>
+  				<input type="radio" name="localization" value="2" checked> Trunk<br>
+  				<input type="radio" name="localization" value="3" checked> Upper Extremity<br>
+  				<input type="radio" name="localization" value="4" checked> Abdomen<br>
+  				<input type="radio" name="localization" value="5" checked> Face<br>
+  				<input type="radio" name="localization" value="6" checked> Chest<br>
+  				<input type="radio" name="localization" value="7" checked> Foot<br>
+  				<input type="radio" name="localization" value="9" checked> Neck<br>
+  				<input type="radio" name="localization" value="10" checked> Scalp<br>
+  				<input type="radio" name="localization" value="11" checked> Hand<br>
+  				<input type="radio" name="localization" value="12" checked> Ear<br>
+  				<input type="radio" name="localization" value="13" checked> Genital<br>
+  				<input type="radio" name="localization" value="14" checked> Finger or Toe<br>	
+			</div>
+			<button type="submit" class = "btn btn-default">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
